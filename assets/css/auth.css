@@ -1,0 +1,96 @@
+
+/* ============================================
+   Authentication Pages Stylesheet
+   ============================================ */
+
+.auth-page {
+    background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.auth-logo {
+    width: 80px;
+    height: 80px;
+    background: rgba(25, 135, 84, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.auth-logo i {
+    font-size: 2.5rem;
+}
+
+.auth-header h3 {
+    color: #333;
+    font-weight: 700;
+}
+
+/* Form Styles */
+.auth-card .form-control,
+.auth-card .form-select {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #dee2e6;
+    font-size: 0.95rem;
+}
+
+.auth-card .form-control:focus,
+.auth-card .form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.auth-card .input-group-text {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-right: none;
+    color: #6c757d;
+}
+
+.auth-card .input-group .form-control {
+    border-left: none;
+}
+
+.auth-card .btn-success {
+    background: linear-gradient(135deg, #198754, #146c43);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.auth-card .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+    .auth-page {
+        padding: 1rem;
+    }
+
+    .auth-card {
+        padding: 1.5rem;
+    }
+}
